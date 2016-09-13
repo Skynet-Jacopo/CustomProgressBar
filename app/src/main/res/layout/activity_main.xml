@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/cn.usmaker.paintdemo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.usmaker.paintdemo.MainActivity">
+
+    <cn.usmaker.paintdemo.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        zhy:image="@mipmap/ic_launcher"
+        zhy:imageScaleType="center"
+        zhy:titleTextColor="#000"
+        zhy:titleText="hello andorid ! "
+        zhy:titleTextSize="30sp"/>
+
+    <cn.usmaker.paintdemo.CustomProgressBar
+        app:speed="4"
+        app:secondColor="#000"
+        app:firstColor="@color/colorAccent"
+        app:circleWidth="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
